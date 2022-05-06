@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- google icon cdn -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+
+    <!-- swipper js cdn -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+
+    <!-- iconscout cdn -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="#"><h3 style="color: #7fb800">Enzo</h3></a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Let's Talk</a></li>
+        </ul>
+        <button id="menu-btn"><span class="material-icons-sharp">menu</span></button>
+        <button id="close-btn"><span class="material-icons-sharp">close</span></button>
+      </div>
+    </nav>
+    <!-- ==================END OF NAVBAR================================== -->
+
+    <section class="landing">
+      <div class="container">
+        <div class="socials">
+          <a href="https://facebook.com" target="_blank"
+            ><i class="uil uil-facebook-f"></i
+          ></a>
+          <a href="https://dribbble.com" target="_blank"
+            ><i class="uil uil-dribbble"></i
+          ></a>
+          <a href="https://github.com" target="_blank"
+            ><i class="uil uil-github"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="uil uil-twitter"></i
+          ></a>
+        </div>
+        <div class="info">
+          <h1>UI/UX Designer & Fullstack Web Developer.</h1>
+          <h3>hi, i'm Emmanuel Odum</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            cumque at ipsam blanditiis, quo tempora minus sint maiores eius
+            dolores voluptates laudantium quos accusantium culpa. A maxime at
+            atque ad?
+          </p>
+          <a href="#contact" class="btn btn-primary">Let's Talk</a>
+        </div>
+        <div class="profile-area">
+          <div class="outer-circle">
+            <span class="material-icons-sharp">design_services</span>
+            <span class="material-icons-sharp">dns</span>
+            <span class="material-icons-sharp">code</span>
+            <span class="material-icons-sharp">fingerprint</span>
+          </div>
+          <div class="inner-circle">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================END OF LANDING============================= -->
+    <section class="about" id="about">
+      <h1>About</h1>
+      <div class="container">
+        <div class="image">
+          <img src="./image/f82681b9-f5ba-4663-a890-35cf29a6ebbe.jpg" alt="" />
+        </div>
+        <div class="info">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+            rerum unde voluptates maiores. Ipsa quia debitis eveniet qui! Quae
+            et, earum assumenda aut facere magnam maiores, perferendis error ad
+            deserunt unde ut quia saepe harum accusantium? Ullam fugit
+            aspernatur pariatur placeat? Officia aut obcaecati quod itaque nisi,
+            eaque voluptas doloremque, quam laudantium ratione necessitatibus
+            perferendis. Ut obcaecati tenetur aliquam hic.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+            autem repudiandae neque voluptatum cumque pariatur illum. Doloribus
+            pariatur voluptas fugiat et, animi dicta. Dolorum nobis perspiciatis
+            minus numquam iusto sapiente, excepturi sed doloremque quod rerum
+            nostrum voluptatibus adipisci ducimus quidem quo cumque libero ipsum
+            incidunt eos fugit a recusandae amet autem. Soluta nostrum similique
+            reprehenderit ea culpa atque obcaecati doloremque?
+          </p>
+          <div class="read-more-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque libero unde perspiciatis sed porro nostrum modi velit,
+              consequatur molestiae soluta aliquid, aliquam ullam minus ab? Aut
+              laboriosam optio reprehenderit quod impedit mollitia nam sit est
+              vero, ut rem blanditiis praesentium autem ad quibusdam cumque
+              corporis. Eum repellat perspiciatis eaque hic ad, nostrum fugiat
+              doloremque aliquam, minus culpa odit ipsam quos eveniet vel
+              mollitia deserunt quam itaque, repellendus optio illo sequi
+              aperiam quas sint? Optio tenetur labore dolor. Tempora, eum qui.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+              ratione nisi, cumque cupiditate quae nobis tempore eum delectus
+              distinctio obcaecati alias quas nihil, eligendi sit, voluptatum
+              sed? Voluptatibus amet, suscipit repellendus, unde quas dolorum
+              quod eveniet consequatur inventore pariatur perspiciatis!
+            </p>
+          </div>
+          <a class="read-more">Show more</a>
+          <a
+            href="./image/CV_2022042117334290.pdf"
+            download
+            class="btn btn-primary"
+            ><i class="uil uil-download-alt"></i>Download CV</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================END OF ABOUT==================== -->
+
+    <section class="skills" id="skills">
+      <h1>Skills</h1>
+      <div class="container">
+        <div class="skill">
+          <div class="head">
+            <div class="left">
+              <span class="material-icons-sharp">design_services</span>
+              <h4>UI/UX Design</h4>
+            </div>
+            <span class="material-icons-sharp">expand_more</span>
+          </div>
+          <div class="items">
+            <div class="item">
+              <h5>Figma</h5>
+              <div class="progress-area">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <h5>92%</h5>
+              </div>
+            </div>
+            <!-- end of item -->
+            <div class="item">
+              <h5>Adobe XD</h5>
+              <div class="progress-area">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <h5>88%</h5>
+              </div>
+            </div>
+            <!-- end of item -->
+            <div class="item">
+              <h5>Adobe After Effect</h5>
+              <div class="progress-area">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <h5>75%</h5>
+              </div>
+            </div>
+            <!-- end of item -->
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="skill">
+          <div class="head">
+            <div class="left">
+              <span class="material-icons-sharp">design_services</span>
+              <h4>Frontend Development</h4>
+            </div>
+            <span class="material-icons-sharp">expand_more</span>
+          </div>
+          <div class="items">
+            <div class="item">
+              <h5>Figma</h5>
+              <div class="progress-area">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <h5>92%</h5>
+              </div>
+            </div>
+            <!-- end of item -->
+            <div class="item">
+              <h5>Adobe XD</h5>
+              <div class="progress-area">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <h5>88%</h5>
+              </div>
+            </div>
+            <!-- end of item -->
+            <div class="item">
+              <h5>Adobe After Effect</h5>
+              <div class="progress-area">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <h5>75%</h5>
+              </div>
+            </div>
+            <!-- end of item -->
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="skill">
+          <div class="head">
+            <div class="left">
+              <span class="material-icons-sharp">design_services</span>
+              <h4>Backend Development</h4>
+            </div>
+            <span class="material-icons-sharp">expand_more</span>
+          </div>
+          <div class="items">
+            <div class="item">
+              <h5>Figma</h5>
+              <div class="progress-area">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <h5>92%</h5>
+              </div>
+            </div>
+            <!-- end of item -->
+            <div class="item">
+              <h5>Adobe XD</h5>
+              <div class="progress-area">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <h5>88%</h5>
+              </div>
+            </div>
+            <!-- end of item -->
+            <div class="item">
+              <h5>Adobe After Effect</h5>
+              <div class="progress-area">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <h5>75%</h5>
+              </div>
+            </div>
+            <!-- end of item -->
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="skill">
+          <div class="head">
+            <div class="left">
+              <span class="material-icons-sharp">design_services</span>
+              <h4>CMS</h4>
+            </div>
+            <span class="material-icons-sharp">expand_more</span>
+          </div>
+          <div class="items">
+            <div class="item">
+              <h5>Figma</h5>
+              <div class="progress-area">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <h5>92%</h5>
+              </div>
+            </div>
+            <!-- end of item -->
+            <div class="item">
+              <h5>Adobe XD</h5>
+              <div class="progress-area">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <h5>88%</h5>
+              </div>
+            </div>
+            <!-- end of item -->
+            <div class="item">
+              <h5>Adobe After Effect</h5>
+              <div class="progress-area">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <h5>75%</h5>
+              </div>
+            </div>
+            <!-- end of item -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--========================END OF SKILLS==================== -->
+
+    <section class="services" id="services">
+      <h1>Services</h1>
+      <div class="container">
+        <div class="service">
+          <span class="material-icons-sharp">design_services</span>
+          <h3>UI/UX Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            nemo quaerat temporibus tempora eius tenetur id? Et adipisci
+            similique tenetur ipsum excepturi quo iure nisi deleniti quasi
+            saepe. Neque, aliquid?
+          </p>
+        </div>
+        <div class="service">
+          <span class="material-icons-sharp">language</span>
+          <h3>Websites & Web apps Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            nemo quaerat temporibus tempora eius tenetur id? Et adipisci
+            similique tenetur ipsum excepturi quo iure nisi deleniti quasi
+            saepe. Neque, aliquid?
+          </p>
+        </div>
+        <div class="service">
+          <span class="material-icons-sharp">devices</span>
+          <h3>Mobile Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            nemo quaerat temporibus tempora eius tenetur id? Et adipisci
+            similique tenetur ipsum excepturi quo iure nisi deleniti quasi
+            saepe. Neque, aliquid?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================END OF SERVICES==================== -->
+
+    <section class="recent-work" id="portfolio">
+      <div class="container">
+        <h4>My Recent Work</h4>
+        <h1>Here Are Some Of My Most Recent Solo Projects</h1>
+        <div class="projects">
+          <div class="project">
+            <div class="thumbnail">
+              <img
+                src="https://miro.medium.com/max/1400/1*5FF-WiNYehgcBgtgAka1Og.png"
+                alt=""
+              />
+            </div>
+            <h2>Complete Responsive E-Commerce Website With Stripe Checkout</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem quaerat error unde nesciunt voluptatibus alias
+              provident dolore quas soluta tenetur reiciendis, voluptate
+              cupiditate iure sapiente dolor. Tenetur voluptatibus itaque
+              obcaecati.
+            </p>
+            <div class="action">
+              <a href="https://github.com" target="blank">Github</a>
+              <a href="https://enzo.com" target="blank">Live Demo</a>
+            </div>
+          </div>
+          <!-- <h1>Here Are Some Of My Most Recent Solo Projects</h1> -->
+        <div class="projects">
+          <div class="project">
+            <div class="thumbnail">
+              <img
+                src="https://uploads-ssl.webflow.com/5c98c492f5786d415aa3c82d/5d4d83138620aea8533bc6e2_img05.jpg"
+                alt=""
+              />
+            </div>
+            <h2>Complete Responsive E-Commerce Website With Stripe Checkout</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem quaerat error unde nesciunt voluptatibus alias
+              provident dolore quas soluta tenetur reiciendis, voluptate
+              cupiditate iure sapiente dolor. Tenetur voluptatibus itaque
+              obcaecati.
+            </p>
+            <div class="action">
+              <a href="https://github.com" target="blank">Github</a>
+              <a href="https://enzo.com" target="blank">Live Demo</a>
+            </div>
+          </div>
+          <!-- <h1>Here Are Some Of My Most Recent Solo Projects</h1> -->
+        <div class="projects">
+          <div class="project">
+            <div class="thumbnail">
+              <img
+                src="https://miro.medium.com/max/1400/1*5FF-WiNYehgcBgtgAka1Og.png"
+                alt=""
+              />
+            </div>
+            <h2>Complete Responsive E-Commerce Website With Stripe Checkout</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem quaerat error unde nesciunt voluptatibus alias
+              provident dolore quas soluta tenetur reiciendis, voluptate
+              cupiditate iure sapiente dolor. Tenetur voluptatibus itaque
+              obcaecati.
+            </p>
+            <div class="action">
+              <a href="https://github.com" target="blank">Github</a>
+              <a href="https://enzo.com" target="blank">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <!-- <h1>Here Are Some Of My Most Recent Solo Projects</h1> -->
+        <div class="projects">
+          <div class="project">
+            <div class="thumbnail">
+              <img
+                src="https://userguiding.com/wp-content/uploads/2021/02/ux-ui-trends-neuromorphic-2.png"
+                alt=""
+              />
+            </div>
+            <h2>Complete Responsive E-Commerce Website With Stripe Checkout</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem quaerat error unde nesciunt voluptatibus alias
+              provident dolore quas soluta tenetur reiciendis, voluptate
+              cupiditate iure sapiente dolor. Tenetur voluptatibus itaque
+              obcaecati.
+            </p>
+            <div class="action">
+              <a href="https://github.com" target="blank">Github</a>
+              <a href="https://enzo.com" target="blank">Live Demo</a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- =====================END OF RECENT WORK(PORTFOLIO)=================== -->
+
+    <section class="testimonials">
+      <h1>Testimonial</h1>
+      <div class="container swiper">
+        <div class="carousel swiper-wrapper">
+          <div class="testimonial swiper-slide">
+            <div class="head">
+              <div class="profile-area">
+                <div class="avatar">
+                  <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="">
+                </div>
+                <div class="info">
+                  <h4>Ethan Odum</h4>
+                  <small>Civil Engineer (ethan.com)</small>
+                </div>
+              </div>
+              <div class="stars">
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic fugiat eius enim aspernatur quod dolorum, impedit non eligendi. Perferendis, sapiente.</p>
+          </div>
+          <div class="testimonial swiper-slide">
+            <div class="head">
+              <div class="profile-area">
+                <div class="avatar">
+                  <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="">
+                </div>
+                <div class="info">
+                  <h4>Ethan Odum</h4>
+                  <small>Civil Engineer (ethan.com)</small>
+                </div>
+              </div>
+              <div class="stars">
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic fugiat eius enim aspernatur quod dolorum, impedit non eligendi. Perferendis, sapiente.</p>
+          </div>
+          <div class="testimonial swiper-slide">
+            <div class="head">
+              <div class="profile-area">
+                <div class="avatar">
+                  <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="">
+                </div>
+                <div class="info">
+                  <h4>Ethan Odum</h4>
+                  <small>Civil Engineer (ethan.com)</small>
+                </div>
+              </div>
+              <div class="stars">
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic fugiat eius enim aspernatur quod dolorum, impedit non eligendi. Perferendis, sapiente.</p>
+          </div>
+          <div class="testimonial swiper-slide">
+            <div class="head">
+              <div class="profile-area">
+                <div class="avatar">
+                  <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="">
+                </div>
+                <div class="info">
+                  <h4>Ethan Odum</h4>
+                  <small>Civil Engineer (ethan.com)</small>
+                </div>
+              </div>
+              <div class="stars">
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+                <span class="material-icons-sharp">star_rate</span>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic fugiat eius enim aspernatur quod dolorum, impedit non eligendi. Perferendis, sapiente.</p>
+          </div>
+        </div>
+        <!-- div class="swiper pagination"</div> -->
+        <div class="swiper-scrollbar">
+          <div class="swiper-scrollbar-drag"></div>
+        </div>
+      </div>
+    </section>
+    <!-- =======================END OF TESTIMONIAL===================== -->
+
+    <section class="contact" id="contact">
+      <div class="overlay">
+        <div class="container">
+          <h1>Let's Talk</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia blanditiis deserunt voluptas alias animi consequatur.</p>
+          <form action="https://formspree.io/f/xeqnpkjz" method="POST">
+            <input type="text" name="Name" placeholder="Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="text" name="Subject" placeholder="Subject" required>
+            <textarea name="Message" placeholder="Message" required></textarea>
+            <input type="submit" value="submit" class="btn btn-primary">
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- =======================END OF CONTACT====================== -->
+
+    <footer>
+      <div class="container">
+        <a href="#"><h3>Enzo</h3></a>
+        <li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Let's Talk</a></li>
+        </li>
+        <div class="socials">
+          <a href="https://facebook.com" target="_blank"
+            ><i class="uil uil-facebook-f"></i
+          ></a>
+          <a href="https://dribbble.com" target="_blank"
+            ><i class="uil uil-dribbble"></i
+          ></a>
+          <a href="https://github.com" target="_blank"
+            ><i class="uil uil-github"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="uil uil-twitter"></i
+          ></a>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright &copy; ENZO Personal Portfolio 2022.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
